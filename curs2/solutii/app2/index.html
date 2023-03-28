@@ -9,14 +9,16 @@
 </head>
 
 <body>
-    <p>1.Ce afiseaza urmatorul code? Default Binding in JavaScript</p>
-    <code><pre>
+    <!-- <p>1.Ce afiseaza urmatorul code? Default Binding in JavaScript</p>
+    <script>
+
         function mesaj() {
             console.log(this.name + ' are mere');
         }
         const name = 'Ana';
         mesaj(); 
-    </pre></code>
+    </script> -->
+    <!-- </pre></code>
     <p>2.Ce afiseaza urmatorul code?</p>
     <code><pre>
         function mesaj() {
@@ -27,7 +29,8 @@
         mesaj(); 
     </pre></code>
     <p>3.Ce afiseaza urmatorul code? Implicit Binding in JavaScript</p>
-    <code><pre>
+ <code><pre> -->
+    <!-- <script>
         function mesaj() {
             console.log(this.name + ' are '+ this.cantitate+' mere');
         }
@@ -45,9 +48,10 @@
 
         myObj.mesaj(); // `this` is bound to `myObj` 
         myObj.newObj.mesaj(); // `this` is bound to `newObj` 
-    </pre></code>
-    <p>4.Ce afiseaza urmatorul code? Explicit binding in JavaScript</p>
-    <code><pre>
+    </script>
+    
+     <p>4.Ce afiseaza urmatorul code? Explicit binding in JavaScript</p>
+     <script>
         function mesaj() {
             console.log(this.name + ' are mere');
         }
@@ -57,9 +61,9 @@
         }
 
         mesaj.call(myObj); 
-    </pre></code>
-    <p>5.Ce afiseaza urmatorul code? Constructor Call Binding in JavaScript</p>
-    <code><pre>
+    </script>
+ --> <p>5.Ce afiseaza urmatorul code? Constructor Call Binding in JavaScript</p>
+    <script>
         class Person {
             constructor(name){
                 this.name = name;
@@ -70,8 +74,8 @@
         }
         const myName = new Person('Ana');
         myName.mesaj();
-    </pre></code>
-    <p>6.Ce afiseaza urmatorul code? call in JavaScript</p>
+    </script>
+    <!-- <p>6.Ce afiseaza urmatorul code? call in JavaScript</p>
     <code><pre>
         // function constructor
         function Car(type, fuelType) {
@@ -147,7 +151,7 @@
         avion.fly(190);
         let run = masina.run.bind(avion, 160);
         run();
-    </pre></code>
+    </pre></code> -->  
 
 </body>
 
