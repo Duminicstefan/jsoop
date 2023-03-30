@@ -12,8 +12,9 @@
     <script>
         class Phone {
             constructor() {
-                if (this.constructor.name === 'Phone')
-                    throw new Error('Phone class is absctract')
+                if (this.constructor.name === 'Phone'){
+                    throw new Error('Phone class is absctract')}
+                 console.log("sunt in constructorul parinte")   
             }
 
             call(number) { }
